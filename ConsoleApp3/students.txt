@@ -1,0 +1,4 @@
+﻿ID | Name | Email | Details
+----------------------------
+1 | Bogdan2 | test2@gmail.com | nosql test
+0 | Bogdan1 | test1@gmail.com | N/A

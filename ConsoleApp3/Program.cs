@@ -15,7 +15,7 @@ internal class Program
             var scanFilter = new ScanFilter();
             var search = table.Scan(scanFilter);
 
-            using var writer = new StreamWriter("students.txt", false, Encoding.UTF8);
+            using var writer = new StreamWriter("/home/bigbob/RiderProjects/ConsoleApp3/ConsoleApp3/students.txt", false, Encoding.UTF8);
 
             await writer.WriteLineAsync("ID | Name | Email | Details");
             await writer.WriteLineAsync("----------------------------");
@@ -39,6 +39,6 @@ internal class Program
                 }
             } while (!search.IsDone);
 
-            Console.WriteLine(Path.GetFullPath("students.txt"));
+            Console.WriteLine("/home/bigbob/RiderProjects/ConsoleApp3/ConsoleApp3/students.txt");
     }
 }
